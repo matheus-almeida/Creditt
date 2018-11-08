@@ -1,0 +1,94 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19/11/2017, 16:05:08
+    Author     : mathe
+*/
+
+.conteiner-lado-esquerdo{
+    position: relative;
+    top: 100px;
+    left: 200px;
+    width: 40%;
+    min-height: 600px;
+    margin-bottom: 120px;
+}
+
+.titulo-ideia-info{
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+.titulo-ideia-info > h1{
+    font-weight: 700 !important;
+    margin: 0px !important;
+    word-wrap: break-word !important;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    font-size: 36px !important;
+    line-height: 40px !important;
+    letter-spacing: -0.6px !important;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    color: #484848 !important;
+}
+
+.desc-ideia-info{
+    padding-top: 20px;
+    border-top: 1px solid #dce0e0;
+    color: #484848 !important;
+    min-height: 120px;
+}
+
+.sobre-ideia{
+    width: 70%;
+    float: left;
+}
+
+.perfil-dono{
+    float: right;
+    height: 60px;
+    width: 60px;
+}
+
+.perfil-dono > img{ 
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+}
+
+.sobre-dono-ideia-info{
+    padding-top: 20px;
+    margin-bottom: 70px;
+    border-top: 1px solid #dce0e0;
+    color: #484848 !important;
+    min-height: 90px;
+}   
+
+.item-equipe > ul{
+    float: left;
+}
+
+.item-equipe > ul > li{
+    float: left;
+}
+
+.item-equipe > ul > li > img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+
+.conteiner-lado-direito{
+    position: relative;
+    top: 100px;
+    left: 200px;
+    width: 40%;
+    min-height: 600px;
+    margin-bottom: 120px;
+    display: none;
+}

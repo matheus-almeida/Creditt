@@ -1,0 +1,123 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18/08/2017, 16:29:00
+    Author     : mathe
+*/
+
+.fundo-estabelecimento{
+    position: relative;
+    top: 60px;
+    left: 0px;
+    width: 100%;
+    height: 500px;
+    background: #fff;
+    background-image: url(../..//img/RestaurantNight.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /*margin-top: 70px;*/
+    margin-bottom: 100px;
+    display: block;
+}
+
+.viewPhotos{
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+}
+
+.viewPhotos > button{
+    border-color: #c4c4c4;
+    width: 200px;
+    height: 40px;
+    background: #fff;
+    color: #484848;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.viewPhotos > button:hover{
+    background: #f5f5f5;
+}
+
+.viewPhotos > button > span{
+    font-size: 12px;
+}
+
+.descricao-anuncio-conteiner{
+    min-height: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.descricao-anuncio-center{
+    position: relative;
+    left: 50%;
+    width: 1100px;
+    margin-left: -550px;
+    height: 400px;
+    /*background: #c4c4c4;*/
+}
+
+.reservar-conteiner{
+    position: absolute;
+    right: 0px;
+    top: -100px;
+    min-height: 400px;
+    width: 400px;
+    /*border: 1px solid #dce0e0;*/
+}
+
+.reservar-conteiner-top{
+    /*height: 60px;*/
+    padding: 4px;
+    width: 100%;
+    background: rgba(60,63,64,0.9);  
+    /*text-align: center;*/
+}
+
+.reservar-conteiner-top > p > span{
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.reservar-conteiner-top > p{
+    color: #fff;
+    text-align: center;
+}
+
+.reservar-conteiner-geral{ 
+    /*height: 60px;*/
+    width: 100%;
+    border: 1px solid #dce0e0;
+    text-align: center;
+    background: #fff;
+
+}
+
+.btn-reservar{
+    width: 200px;
+    height: 40px;
+    background: #ee6e73;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.local-anuncio{
+    width: 100%;
+    margin-top: 100px;
+    min-height: 400px;
+}

@@ -1,0 +1,327 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07/09/2017, 21:51:49
+    Author     : mathe
+*/
+
+body{
+    /*background: #f5f5f5 !important;*/
+    /*background: #263238 !important;*/
+}
+
+/*Estrutura*/
+
+.geral{
+    width: 100%;
+    min-height: 600px;
+}
+
+.conteiner-esquer{
+    position: relative;
+    top: 60px;
+    width: 30%;
+    min-height: 500px;
+    float: left;
+}
+
+.conteiner-central{
+    position: relative;
+    top: 60px;
+    width: 40%;
+    min-height: 500px;
+    float: left;
+}
+
+.conteiner-direito{
+    position: relative;
+    top: 60px;
+    width: 30%;
+    min-height: 500px;
+    float: left;
+}
+
+.info-carteira{
+    position: relative;
+    top: 30px;
+    margin-left: 60px;
+    min-height: 300px;
+    width: 75%;
+    background: #fff;
+    border: solid 1px #eff1f9;
+    border-radius: 8px;
+    box-shadow: 4px 4px 20px 0 rgba(120,135,182,.1);
+    border-radius: 8px;
+    display: block;
+    float: left;
+}
+
+.info-carteira-title{
+    padding: 10px;
+    text-align: center;
+}
+
+.info-carteira-title > span{
+    font-size: 12px;
+    color: #607D8B;
+}
+
+.lista-info-carteira{
+    padding: 15px;
+}
+
+.lista-info-carteira > ul > li{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.lista-info-carteira > ul > li > span{
+    font-weight: bold;
+}
+
+.info-carteira-mais{
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.info-carteira-mais > a{
+    text-align: center;
+    font-size: 12px;
+}
+
+.info-investimento{
+    position: relative;
+    top: 90px;
+    left: 80px;
+    min-height: 300px;
+    width: 80%;
+    background: #fff;
+    /*box-shadow: 0 1px 5px rgba(0,0,0,0.1);*/
+    border: 1px solid #dce0e0;
+    border-radius: 8px;
+    display: none;
+    float: left;
+}
+
+.detalhes-investimento{
+    padding: 10px;
+}
+
+.detalhes-investimento-motivo{
+    position: absolute;
+    top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.detalhes-investimento-valor{
+    position: absolute;
+    top: 35px;
+    font-size: 16px;
+
+}
+
+.lista-ideias{
+   position: absolute;
+    top: 30px;
+    min-height: 250px;
+    width: 95%;
+    /*background: #AED581;*/
+    /* box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    border: 1px solid #dce0e0;*/
+    border: solid 1px #eff1f9;
+    border-radius: 8px;
+    box-shadow: 4px 4px 20px 0 rgba(120,135,182,.1);
+
+}
+
+.lista-ideias:hover{
+    box-shadow: none;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+
+.item-ideia{
+    margin: 15px;
+}
+
+.item-ideia > a > h1{
+    font-weight: 700 !important;
+    margin: 0px !important;
+    word-wrap: break-word !important;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    font-size: 32px !important;
+    line-height: 40px !important;
+    letter-spacing: -0.6px !important;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+    color: #484848 !important;
+}
+
+.item-ideia > h6{
+    margin: 0px !important;
+    word-wrap: break-word !important;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+    font-size: 14px !important;
+    line-height: 40px !important;
+    letter-spacing: -0.6px !important;
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+}
+
+.linha-separadora{
+    margin: 15px; 
+    border-bottom: 1px solid #dce0e0;
+}
+
+.meus-investimentos{ 
+    position: absolute;
+    top: 300px;
+    min-height: 190px;
+    width: 95%;
+    border: solid 1px #eff1f9;
+    border-radius: 8px;
+    box-shadow: 4px 4px 20px 0 rgba(120,135,182,.1);
+    border-radius: 8px; 
+    margin-bottom: 50px;
+}
+
+.meus-investimentos:hover{
+    box-shadow: none;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.ranking-proposta{
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    min-height: 300px;
+    width: 78%;
+    /*background: #AED581;*/
+    /* box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    border: 1px solid #dce0e0;*/
+    border: solid 1px #eff1f9;
+    border-radius: 8px;
+    box-shadow: 4px 4px 20px 0 rgba(120,135,182,.1);
+    float: right;
+    color: #607D8B;
+    margin-bottom: 30px;
+}
+
+.ranking-proposta-title{
+    padding: 10px;
+    text-align: center;
+}
+
+.ranking-proposta-title > span{
+    font-size: 12px;
+}
+
+.ranking-proposta-grupo-pessoas{
+    padding: 10px;
+}
+
+.ranking-proposta-pessoas-item{
+    position: relative;
+    height: 78px; 
+    margin-bottom: 10px;
+}
+
+.ranking-proposta-pessoas-item > img{
+    position: relative;
+    top: 50%;
+    border-radius: 100%;
+    height: 35px;
+    width: 35px;
+    margin-top: -17.5px;
+    border: 2px solid;
+}
+
+.ranking-proposta-pessoas-item > *{
+    margin-left: 20px;
+}
+
+.pessoa-nome{
+    position: absolute;
+    top: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.pessoa-profissao{
+    position: absolute;
+    top: 25px;
+    font-size: 10px;
+}
+
+.ranking-proposta-pessoas-item > button{
+    position: absolute;
+    top: 45px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid #dce0e0;
+    /*border: 1px solid #fff;*/
+    background: transparent;
+    font-size: 11px;
+}
+
+.ranking-proposta-pessoas-item > button:focus{
+    background: transparent;
+}
+
+.div-alerta-atividade{
+    position: relative;
+    top: 380px;
+    right: 80px;
+    min-height: 100px;
+    width: 78%;
+    border: solid 1px #eff1f9;
+    border-radius: 8px;
+    box-shadow: 4px 4px 20px 0 rgba(120,135,182,.1);
+    border-radius: 8px;
+    float: right;
+    color: #607D8B;
+}
+
+.titulo-progress{
+    margin: 20px;
+    text-align: center;
+}
+
+.titulo-progress > *{
+    color: #607D8B;
+    font-size: 12px;
+}
+
+.progress-investimento{
+    margin: 30px;
+}
+
+/*Estilização do Materialize*/
+
+.progress{
+    padding: 5px !important; 
+    background-color: #FBE9E7 !important;
+}
+
+.determinate{
+    background-color: #FF5722 !important;
+}
+
+/*Fontes e cores*/
+
+.font-red{
+    color: #E53935;
+}
+
+.link-simple{
+    color: #039be5;
+}

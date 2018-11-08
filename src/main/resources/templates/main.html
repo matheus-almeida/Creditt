@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <title>Creditt :) - Investimentos</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/png" href="img/money.png" media="all" />
+
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular/angular-messages.js"></script>
+    <script src="scripts/js/app.js"></script>
+    <script src="scripts/js/controllers/creditoJaCtrl.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="scripts/css/estilo_principal.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="scripts/css/estilo_usuario.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="scripts/css/estilo.css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="lib/materialize/css/materialize.min.css"  media="all"/>
+
+    <script type="text/javascript" src="lib/jquery/jquery.js"></script>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="lib/materialize/js/materialize.min.js"></script>
+
+    <script type="text/javascript" src="scripts/js/popup_login.js"></script>
+
+    <style>
+            .backdrop{
+                color: #00838f;
+                font-size: 9px !important;
+            }
+        </style>
+
+
+</head>
+<body>
+<div class="container">
+    <div class="global">
+
+        <div id="top-logado">
+
+            <header class="top-logado" style="display: block; border-bottom: 1px solid #dce0e0;">
+                <a href="/"><div class="position-logo">
+                    <img src="img/money.png" alt="uau"/>
+                </div></a>
+
+                <div class="links-main">
+                    <div class="item-link"><a href=""><span>Vamos fazer uma simulação?</span></a></div>
+                    <div class="item-link"><a href=""><span>Notificações</span></a></div>
+                    <div class="item-link"><a href=""><span>Mensagens</span></a></div>
+                    <div class="item-link"><a href=""><span>Ajuda</span></a></div>
+
+                    <div class="item-link-profile">
+                        <a class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Matheus Almeida"><img src="img/matheusjunior66_1438393126_140.jpg" alt="perfil" /></a>
+                    </div>
+
+                </div>
+
+            </header>
+        </div>
+
+        <script type="text/javascript">
+
+                    /*$(document).ready(function () {
+
+                     var slider = document.getElementById('test-slider');
+                     noUiSlider.create(slider, {
+                     start: [20, 80],
+                     connect: true,
+                     step: 1,
+                     orientation: 'horizontal', // 'horizontal' or 'vertical'
+                     range: {
+                     'min': 0,
+                     'max': 100
+                     },
+                     format: wNumb({
+                     decimals: 0
+                     })
+                     });
+
+
+                     });*/
+
+                </script>
+
+        <div class="geral">
+            <div class="conteiner-esquer">
+                <div class="info-carteira hide-on-med-and-down">
+                    <div class="info-carteira-title"><span>Minha Carteira</span></div>
+
+                    <div class="lista-info-carteira">
+                        <ul>
+                            <li>Valor solicitado: <span>R$ 100.000,00</span></li>
+                            <li>Valor atual: <span>R$ 12.000,00</span></li>
+                            <li>Último lançamento: <span class="font-red">R$ 2.000,00</span></li>
+                            <li>Último investidor: <span>Warren Buffett</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="info-carteira-mais">
+                        <a>Hitórico da carteira</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conteiner-central">
+
+                <div class="info-investimento">
+                    <div class="detalhes-investimento">
+                        <span class="detalhes-investimento-motivo">Motivo da solicitação: Capital para uma startup de mineração de dados</span>
+                        <span class="detalhes-investimento-valor">Valor solicitado: R$ 100.000,00</span>
+                    </div>
+
+                    <!--<div id="test-slider"></div>-->
+
+                </div>
+
+                <div class="lista-ideias">
+                    <section class="item-ideia">
+                        <a href="/idea"><h1>Alugue sua bike</h1></a>
+                        <h6><span style="font-weight: 600">Arujá</span> . São Paulo</h6>
+                    </section>
+
+                    <!--<div class="linha-separadora"></div>-->
+
+                </div>
+
+                <div class="meus-investimentos">
+                    <section class="item-ideia">
+                        <a href="/idea"><h1>Meus investimentos</h1></a>
+                        <h6 class="link-simple" style="cursor: pointer">Mostrar mais detalhes</h6>
+                    </section>
+
+                    <!--<div class="linha-separadora"></div>-->
+
+                </div>
+
+            </div>
+
+            <div class="conteiner-direito hide-on-med-and-down">
+
+                <div class="ranking-proposta">
+                    <div class="ranking-proposta-title">
+                        <span>Pessoas interessadas em investir em você</span>
+                    </div>
+                    <div class="ranking-proposta-grupo-pessoas">
+                        <div class="ranking-proposta-pessoas-item">
+                            <img class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Elon Musk" src="img/elon-munk.jpg" alt="" />
+
+                            <span class="pessoa-nome">Elon Musk</span>
+                            <span class="pessoa-profissao">Empreendedor, filantropo e visionário sul-africano.</span>
+                            <button>Ver proposta</button>
+
+                        </div>
+
+                        <div class="ranking-proposta-pessoas-item">
+                            <img  class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Daymond John" src="img/daymond_john.jpg" alt="" />
+
+                            <span class="pessoa-nome">Daymond John</span>
+                            <span class="pessoa-profissao">Empreendedor e investidor americano.</span>
+                            <button>Ver proposta</button>
+
+                        </div>
+
+                        <div class="ranking-proposta-pessoas-item">
+                            <img class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Lori Greiner" src="img/lori_greiner.jpeg" alt="" />
+
+                            <span class="pessoa-nome">Lori Greiner</span>
+                            <span class="pessoa-profissao">Lori Greiner é uma inventora, empreendedora.</span>
+                            <button>Ver proposta</button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="div-alerta-atividade">
+
+                    <div class="titulo-progress">
+                        <h5>Progresso de investimento</h5>
+                    </div>
+
+                    <div class="progress-investimento">
+                        <div class="progress tooltipped" data-position="bottom" data-delay="50" data-tooltip="R$ 100.000,00">
+                            <div class="determinate tooltipped" data-position="bottom" data-delay="50" data-tooltip="R$ 12.000,00" style="width: 12%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="hide-on-med-and-down">
+            <div class="colum-footer">
+                <div class="coluns-info"></div>
+
+                <div class="coluns-info">
+                    <div>
+                        <select class="select-local">
+                            <option value="pt" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$pt">Português</option>
+                            <option value="ms" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$ms">Bahasa Melayu</option>
+                            <option value="ca" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$ca">Català</option>
+                            <option value="da" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$da">Dansk</option>
+                            <option value="de" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$de">Deutsch</option>
+                            <option value="en" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$en">English</option>
+                            <option value="es" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$es">Español</option>
+                            <option value="el" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$el">Eλληνικά</option>
+                            <option value="fr" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$fr">Français</option>
+                            <option value="it" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$it">Italiano</option>
+                            <option value="hu" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$hu">Magyar</option>
+                            <option value="nl" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$nl">Nederlands</option>
+                            <option value="no" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$no">Norsk</option>
+                            <option value="pl" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$pl">Polski</option>
+                            <option value="pt" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$pt">Português</option>
+                            <option value="fi" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$fi">Suomi</option>
+                            <option value="sv" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$sv">Svenska</option>
+                            <option value="tr" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$tr">Türkçe</option>
+                            <option value="is" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$is">Íslenska</option>
+                            <option value="cs" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$cs">Čeština</option>
+                            <option value="ru" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$ru">Русский</option>
+                            <option value="th" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$th">ภาษาไทย</option>
+                            <option value="zh" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$zh">中文 (简体)</option>
+                            <option value="zh-TW" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$zh-TW">中文 (繁體)</option>
+                            <option value="ja" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$ja">日本語</option>
+                            <option value="ko" data-reactid=".21tat8tliww.0.0.0.0.0.0.1.1.0.1:$ko">한국어</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <select class="select-local">
+                            <option value="BRL" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$BRL">BRL</option>
+                            <option value="AED" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$AED">AED</option>
+                            <option value="ARS" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$ARS">ARS</option>
+                            <option value="AUD" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$AUD">AUD</option>
+                            <option value="BGN" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$BGN">BGN</option>
+                            <option value="BRL" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$BRL">BRL</option>
+                            <option value="CAD" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$CAD">CAD</option>
+                            <option value="CHF" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$CHF">CHF</option>
+                            <option value="CLP" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$CLP">CLP</option>
+                            <option value="CNY" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$CNY">CNY</option>
+                            <option value="COP" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$COP">COP</option>
+                            <option value="CRC" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$CRC">CRC</option>
+                            <option value="CZK" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$CZK">CZK</option>
+                            <option value="DKK" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$DKK">DKK</option>
+                            <option value="EUR" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$EUR">EUR</option>
+                            <option value="GBP" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$GBP">GBP</option>
+                            <option value="HKD" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$HKD">HKD</option>
+                            <option value="HRK" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$HRK">HRK</option>
+                            <option value="HUF" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$HUF">HUF</option>
+                            <option value="IDR" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$IDR">IDR</option>
+                            <option value="ILS" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$ILS">ILS</option>
+                            <option value="INR" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$INR">INR</option>
+                            <option value="JPY" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$JPY">JPY</option>
+                            <option value="KRW" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$KRW">KRW</option>
+                            <option value="MAD" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$MAD">MAD</option>
+                            <option value="MXN" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$MXN">MXN</option>
+                            <option value="MYR" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$MYR">MYR</option>
+                            <option value="NOK" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$NOK">NOK</option>
+                            <option value="NZD" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$NZD">NZD</option>
+                            <option value="PEN" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$PEN">PEN</option>
+                            <option value="PHP" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$PHP">PHP</option>
+                            <option value="PLN" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$PLN">PLN</option>
+                            <option value="RON" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$RON">RON</option>
+                            <option value="RUB" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$RUB">RUB</option>
+                            <option value="SAR" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$SAR">SAR</option>
+                            <option value="SEK" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$SEK">SEK</option>
+                            <option value="SGD" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$SGD">SGD</option>
+                            <option value="THB" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$THB">THB</option>
+                            <option value="TRY" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$TRY">TRY</option>
+                            <option value="TWD" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$TWD">TWD</option>
+                            <option value="UAH" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$UAH">UAH</option>
+                            <option value="USD" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$USD">USD</option>
+                            <option value="UYU" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$UYU">UYU</option>
+                            <option value="VND" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$VND">VND</option>
+                            <option value="ZAR" data-reactid=".21tat8tliww.0.0.0.1.0.0.0.1.1.0.1:$ZAR">ZAR</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="coluns-info">
+                    <h1>Creditt :)</h1>
+                    <div>
+                        <ul class="list">
+                            <li><a>Sobre</a></li>
+                            <li><a>Carreira</a></li>
+                            <li><a>Imprensa</a></li>
+                            <li><a>Políticas de Uso</a></li>
+                            <li><a>Ajuda</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="coluns-info">
+
+                    <h1>Descubra</h1>
+                    <div>
+                        <ul class="list">
+                            <li><a>Confiança e Segurança</a></li>
+                            <li><a>Mesa de Negócios</a></li>
+                            <li><a>Guias</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="coluns-info">
+                    <h1>Emprestimos</h1>
+
+                    <div>
+                        <ul class="list">
+                            <li><a>Por Que Emprestar</a></li>
+                            <li><a>Seguro na Transação</a></li>
+                            <li><a>Emprestando com Responsabilidade</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <div class="footer-left">
+                    <span>© Creditt, Inc.</span>
+                </div>
+                <div class="footer-right">
+                    <a><span>Termos e Privacidade</span></a>
+                    <a><span>Mapa do Site</span></a>
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/?hl=pt-br"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</div>
+</body>
+</html>
